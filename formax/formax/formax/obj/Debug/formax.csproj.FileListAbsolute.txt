@@ -1,0 +1,14 @@
+C:\Users\max\Documents\C#\formax\formax\formax\bin\Debug\formax.exe.config
+C:\Users\max\Documents\C#\formax\formax\formax\bin\Debug\formax.exe
+C:\Users\max\Documents\C#\formax\formax\formax\bin\Debug\formax.pdb
+C:\Users\max\Documents\C#\formax\formax\formax\obj\Debug\formax.csprojResolveAssemblyReference.cache
+C:\Users\max\Documents\C#\formax\formax\formax\obj\Debug\MainWindow.g.cs
+C:\Users\max\Documents\C#\formax\formax\formax\obj\Debug\App.g.cs
+C:\Users\max\Documents\C#\formax\formax\formax\obj\Debug\formax_MarkupCompile.cache
+C:\Users\max\Documents\C#\formax\formax\formax\obj\Debug\formax_MarkupCompile.lref
+C:\Users\max\Documents\C#\formax\formax\formax\obj\Debug\MainWindow.baml
+C:\Users\max\Documents\C#\formax\formax\formax\obj\Debug\formax.g.resources
+C:\Users\max\Documents\C#\formax\formax\formax\obj\Debug\formax.Properties.Resources.resources
+C:\Users\max\Documents\C#\formax\formax\formax\obj\Debug\formax.csproj.GenerateResource.Cache
+C:\Users\max\Documents\C#\formax\formax\formax\obj\Debug\formax.exe
+C:\Users\max\Documents\C#\formax\formax\formax\obj\Debug\formax.pdb
