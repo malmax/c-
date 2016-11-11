@@ -1,1 +1,7 @@
 C:\Users\max\Documents\C#\tyre2\Lesson01\Lesson01\bin\Debug\Lesson01.exe.config
+C:\Users\malma\Documents\C#Lessons\tyre2\Lesson01\Lesson01\bin\Debug\Lesson01.exe.config
+C:\Users\malma\Documents\C#Lessons\tyre2\Lesson01\Lesson01\obj\Debug\Lesson01.csprojResolveAssemblyReference.cache
+C:\Users\malma\Documents\C#Lessons\tyre2\Lesson01\Lesson01\bin\Debug\Lesson01.exe
+C:\Users\malma\Documents\C#Lessons\tyre2\Lesson01\Lesson01\bin\Debug\Lesson01.pdb
+C:\Users\malma\Documents\C#Lessons\tyre2\Lesson01\Lesson01\obj\Debug\Lesson01.exe
+C:\Users\malma\Documents\C#Lessons\tyre2\Lesson01\Lesson01\obj\Debug\Lesson01.pdb

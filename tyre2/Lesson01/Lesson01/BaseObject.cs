@@ -9,6 +9,11 @@ namespace Asteroids
         protected Point dir;
         protected Size size;
 
+        public BaseObject()
+        {
+
+        }
+
         public BaseObject(Point pos, Point dir, Size size)
         {
             this.pos = pos;
@@ -16,7 +21,7 @@ namespace Asteroids
             this.size = size;
         }
 
-        public void Draw()
+        public virtual void Draw()
         {
             Game.buffer.Graphics.DrawEllipse(Pens.White, pos.X, pos.Y, size.Width, size.Height);
         }
@@ -25,15 +30,16 @@ namespace Asteroids
         {
             pos.X = pos.X + dir.X;
             pos.Y = pos.Y + dir.Y;
-            if (pos.X < 0) dir.X = -dir.X;
-            if(pos.X > Game.Width) dir.X = -dir.X;
+            if (pos.X < 0 || pos.X > Game.Width) dir.X = -dir.X;
+            if (pos.Y < 0 || pos.Y > Game.Height) dir.Y = -dir.Y;
         }
     }
 
     class Star: BaseObject
     {
-        public void Draw()
+        public override void Draw()
         {
+            base.Draw();
             pos.X = 10;
             pos.Y = 20;
         }

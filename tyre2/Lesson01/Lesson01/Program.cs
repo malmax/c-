@@ -12,6 +12,7 @@ namespace Asteroids
             form.Height = 600;
             form.Show();
             Game.Init(form);
+            
             Application.Run(form);
         }
     }
