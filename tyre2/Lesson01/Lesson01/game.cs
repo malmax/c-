@@ -10,6 +10,8 @@ namespace Asteroids
         static public BufferedGraphics buffer;
         static BaseObject[] objs;
 
+        static Random rnd = new Random(DateTime.Now.Millisecond);
+
         //Свойства
         //Ширина и высота игрового поля
         static public int Width { get; set; }
@@ -33,6 +35,8 @@ namespace Asteroids
             //Для того, чтобы рисовать в буфере
             buffer = context.Allocate(g, new Rectangle(0, 0, Width, Height));
 
+            Load();
+
             //Таймер для обработки Update и Draw
             Timer timer = new Timer();
             timer.Interval = 100;
@@ -44,13 +48,32 @@ namespace Asteroids
         {
             Draw();
             Update();
-        }
+        }
+
         static public void Load()
         {
             objs = new BaseObject[30];
+
+            objs[0] = new Sun(new Point(rnd.Next(1, 800), rnd.Next(1, 600)), new Point(-1 * rnd.Next(2, 10), 0), new Size(20,20));
             for (int i = 0; i < objs.Length; i++)
-                objs[i] = new BaseObject(new Point(600, i * 20), new Point(15 - i, 15 - i), new Size(20, 20));
-        }
+            {
+                if (objs[i] != null)
+                    continue;
+                
+                switch(rnd.Next(0,2))
+                {
+                    case 0:
+                        objs[i] = new BaseObject(new Point(600, i * 20), new Point(15 - i, 15 - i), new Size(20, 20));
+                        break;
+                    case 1:
+                        objs[i] = new Star(new Point(rnd.Next(1, 800), rnd.Next(1, 600)), new Point(-1 * rnd.Next(2, 10), 0), 
+                            new Size(5, 5), Color.FromArgb(rnd.Next(255), rnd.Next(255), rnd.Next(255)));
+                        break;
+                }
+            }
+            
+        }
+
         static public void Draw()
         {
             buffer.Graphics.Clear(Color.Black);
@@ -63,6 +86,7 @@ namespace Asteroids
         {
             foreach (BaseObject obj in objs)
                 obj.Update();
-        }
+        }
+
     }
 }
