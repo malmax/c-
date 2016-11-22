@@ -13,6 +13,10 @@ namespace thegame
         {
             Game.buffer.Graphics.DrawRectangle(Pens.OrangeRed, pos.X, pos.Y, size.Width, size.Height);
         }
+        public Point getPos()
+        {
+            return pos;
+        }
 
         public override void Regenerate()
         {

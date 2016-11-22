@@ -10,6 +10,7 @@ namespace thegame
     class Ship : BaseObject
     {
         int energy = 10;
+        public bool up = false, down = false, left = false, right = false;
         Image starShipImage = Image.FromFile("shship.png");
         public bool enable = true;
 
@@ -40,15 +41,24 @@ namespace thegame
         }
         public override void Update()
         {
+            if(up)
+            {
+                if(pos.Y > 0) pos.Y = pos.Y - dir.Y;
+            }
+            if(down)
+            {
+                if (pos.Y < Game.Height) pos.Y = pos.Y + dir.Y;
+            }
+            if(left)
+            {
+                if (pos.X > 0) pos.X = pos.X - dir.X;
+            }
+            if (right)
+            {
+                if (pos.X < Game.Width) pos.X = pos.X + dir.X;
+            }
         }
-        public void Up()
-        {
-            if (pos.Y > 0) pos.Y = pos.Y - dir.Y;
-        }
-        public void Down()
-        {
-            if (pos.Y < Game.Height) pos.Y = pos.Y + dir.Y;
-        }
+        
         public void Die()
         {
             enable = false;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 
 namespace thegame
@@ -33,6 +34,18 @@ namespace thegame
             pos.X = Game.Width + size.Width;
             pos.Y = Game.rnd.Next(Game.Height);
         }
+
+        public static List<Asteroid> generateAsteroids(int count)
+        {
+            List<Asteroid> asteroids = new List<Asteroid>();
+            for(int i = 0; i<count; i++)
+            {
+                asteroids.Add(new Asteroid(new Point(Game.rnd.Next(Game.Width/2,Game.Width), Game.rnd.Next(Game.Height)), new Point(Game.rnd.Next(0, 10) - 15, 0), new Size(50, 50)));
+            }
+
+            return asteroids;
+        }
+
     }
 }
 

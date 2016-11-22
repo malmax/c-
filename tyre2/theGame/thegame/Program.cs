@@ -11,8 +11,7 @@ namespace thegame
     class Program
     {
         static void Main(string[] arg)
-        {
-            
+        {            
             Form form = new Form();
             form.Width = 800;
             form.Height = 530;
