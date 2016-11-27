@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SwissKnife.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">notepad.txt</Value>
+    </Setting>
+    <Setting Name="SwissKnife_com_cdyne_wsf_Weather" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://wsf.cdyne.com/WeatherWS/Weather.asmx</Value>
+    </Setting>
+    <Setting Name="SwissKnife_ru_cbr_www_DailyInfo" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.cbr.ru/DailyInfoWebServ/DailyInfo.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
