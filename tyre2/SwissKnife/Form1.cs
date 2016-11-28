@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.Dataset;
+
 
 namespace SwissKnife
 {
@@ -76,25 +76,16 @@ namespace SwissKnife
         private void btnKurs_Click(object sender, EventArgs e)
         {
             var info =new ru.cbr.www.DailyInfo();
-            DataSet infoXML = info.GetCursOnDate(DateTime.Now);
-            infoXML.
+            System.Data.DataSet infoCur = info.GetCursOnDate(DateTime.Now);
+            string[] outToForm = new string[infoCur.Tables[0].Rows.Count];
+            //var val_ds = (System.Data.DataSet)info.GetCursDynamic(DateTime.Now, DateTime.Now, "R01235"); //Доллар США
 
-                http://www.cbr.ru/scripts/Root.asp?Prtid=DWS
-
-
-            foreach ( var txt in infoXML.ChildNodes)
+            for(int i =0; i< infoCur.Tables[0].Rows.Count; i++)                
             {
-                foreach( var val in txt.ChildNodes )
-                {
-                    Console.WriteLine("{0} - {1}", val.Name, val.innerText);
-                }
+                DataRow row = infoCur.Tables[0].Rows[i];
+                outToForm[i] = string.Format("{0}({1}) - {2}", row.ItemArray[0].ToString().Trim(), row.ItemArray[1].ToString().Trim(), row.ItemArray[2].ToString().Trim());
             }
-            XDocument document = XDocument.Parse(infoXML.InnerXml);
-            foreach (XElement element in document.Root.Elements())
-            {
-                Console.WriteLine(element.Name.ToString());
-
-            }
+            kursOut.Lines = outToForm;
         }
 
         private void calculateLifeDate_Click(object sender, EventArgs e)

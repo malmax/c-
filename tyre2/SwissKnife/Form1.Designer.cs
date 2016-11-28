@@ -80,17 +80,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tbZip = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.kursOut = new System.Windows.Forms.TextBox();
             this.btnKurs = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.lifeTimeLabel = new System.Windows.Forms.Label();
+            this.calculateLifeDate = new System.Windows.Forms.Button();
             this.dateTimeEndLife = new System.Windows.Forms.DateTimePicker();
             this.dateTimeStartLife = new System.Windows.Forms.DateTimePicker();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.currentTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslCurrentFile = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.calculateLifeDate = new System.Windows.Forms.Button();
-            this.lifeTimeLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -111,8 +111,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(460, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(345, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -130,7 +129,7 @@
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // newToolStripMenuItem
@@ -139,7 +138,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // openToolStripMenuItem
@@ -148,13 +147,13 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(170, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -162,20 +161,20 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             // 
             // tsmiSaveAs
             // 
             this.tsmiSaveAs.Name = "tsmiSaveAs";
-            this.tsmiSaveAs.Size = new System.Drawing.Size(173, 26);
+            this.tsmiSaveAs.Size = new System.Drawing.Size(146, 22);
             this.tsmiSaveAs.Text = "Save &As";
             this.tsmiSaveAs.Click += new System.EventHandler(this.tsmiSaveAs_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(170, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -183,7 +182,7 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // printPreviewToolStripMenuItem
@@ -191,18 +190,18 @@
             this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
             this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(170, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -217,27 +216,27 @@
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.undoToolStripMenuItem.Text = "&Undo";
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.redoToolStripMenuItem.Text = "&Redo";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(168, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
             // 
             // cutToolStripMenuItem
             // 
@@ -245,7 +244,7 @@
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.cutToolStripMenuItem.Text = "Cu&t";
             // 
             // copyToolStripMenuItem
@@ -254,7 +253,7 @@
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.copyToolStripMenuItem.Text = "&Copy";
             // 
             // pasteToolStripMenuItem
@@ -263,18 +262,18 @@
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.pasteToolStripMenuItem.Text = "&Paste";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(168, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.selectAllToolStripMenuItem.Text = "Select &All";
             // 
             // toolsToolStripMenuItem
@@ -283,19 +282,19 @@
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.toolsToolStripMenuItem.Text = "&Tools";
             // 
             // customizeToolStripMenuItem
             // 
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.customizeToolStripMenuItem.Text = "&Customize";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // helpToolStripMenuItem
@@ -307,36 +306,36 @@
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // contentsToolStripMenuItem
             // 
             this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.contentsToolStripMenuItem.Text = "&Contents";
             // 
             // indexToolStripMenuItem
             // 
             this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.indexToolStripMenuItem.Text = "&Index";
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.searchToolStripMenuItem.Text = "&Search";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(139, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // toolStrip1
@@ -354,9 +353,9 @@
             this.toolStripSeparator7,
             this.helpToolStripButton,
             this.tsbInserteDateTime});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(460, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(345, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -460,21 +459,19 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 55);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Location = new System.Drawing.Point(0, 51);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(460, 331);
+            this.tabControl1.Size = new System.Drawing.Size(345, 263);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.rtbNotepad);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(452, 302);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Size = new System.Drawing.Size(337, 237);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Блокнот";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -482,10 +479,9 @@
             // rtbNotepad
             // 
             this.rtbNotepad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbNotepad.Location = new System.Drawing.Point(4, 4);
-            this.rtbNotepad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtbNotepad.Location = new System.Drawing.Point(3, 3);
             this.rtbNotepad.Name = "rtbNotepad";
-            this.rtbNotepad.Size = new System.Drawing.Size(444, 294);
+            this.rtbNotepad.Size = new System.Drawing.Size(331, 231);
             this.rtbNotepad.TabIndex = 0;
             this.rtbNotepad.Text = "";
             // 
@@ -494,11 +490,10 @@
             this.tabPage2.Controls.Add(this.lblWeather);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.tbZip);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(452, 302);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Size = new System.Drawing.Size(337, 243);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Погода";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -506,19 +501,17 @@
             // lblWeather
             // 
             this.lblWeather.AutoSize = true;
-            this.lblWeather.Location = new System.Drawing.Point(12, 79);
-            this.lblWeather.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblWeather.Location = new System.Drawing.Point(9, 64);
             this.lblWeather.Name = "lblWeather";
-            this.lblWeather.Size = new System.Drawing.Size(16, 17);
+            this.lblWeather.Size = new System.Drawing.Size(13, 13);
             this.lblWeather.TabIndex = 2;
             this.lblWeather.Text = "0";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 42);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(9, 34);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Получить";
             this.button1.UseVisualStyleBackColor = true;
@@ -526,43 +519,39 @@
             // 
             // tbZip
             // 
-            this.tbZip.Location = new System.Drawing.Point(12, 9);
-            this.tbZip.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbZip.Location = new System.Drawing.Point(9, 7);
             this.tbZip.Name = "tbZip";
-            this.tbZip.Size = new System.Drawing.Size(132, 22);
+            this.tbZip.Size = new System.Drawing.Size(100, 20);
             this.tbZip.TabIndex = 0;
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.textBox1);
+            this.tabPage3.Controls.Add(this.kursOut);
             this.tabPage3.Controls.Add(this.btnKurs);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage3.Size = new System.Drawing.Size(452, 302);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Size = new System.Drawing.Size(337, 237);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Курс валют";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // kursOut
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(4, 84);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(444, 214);
-            this.textBox1.TabIndex = 1;
+            this.kursOut.Location = new System.Drawing.Point(3, 47);
+            this.kursOut.Multiline = true;
+            this.kursOut.Name = "kursOut";
+            this.kursOut.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.kursOut.Size = new System.Drawing.Size(334, 169);
+            this.kursOut.TabIndex = 1;
             // 
             // btnKurs
             // 
-            this.btnKurs.Location = new System.Drawing.Point(37, 22);
-            this.btnKurs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKurs.Location = new System.Drawing.Point(28, 18);
             this.btnKurs.Name = "btnKurs";
-            this.btnKurs.Size = new System.Drawing.Size(100, 28);
+            this.btnKurs.Size = new System.Drawing.Size(75, 23);
             this.btnKurs.TabIndex = 0;
-            this.btnKurs.Text = "Курс";
+            this.btnKurs.Text = "Курсы на сегодня";
             this.btnKurs.UseVisualStyleBackColor = true;
             this.btnKurs.Click += new System.EventHandler(this.btnKurs_Click);
             // 
@@ -572,29 +561,47 @@
             this.tabPage4.Controls.Add(this.calculateLifeDate);
             this.tabPage4.Controls.Add(this.dateTimeEndLife);
             this.tabPage4.Controls.Add(this.dateTimeStartLife);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage4.Size = new System.Drawing.Size(452, 302);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage4.Size = new System.Drawing.Size(337, 243);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Разница дат";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // lifeTimeLabel
+            // 
+            this.lifeTimeLabel.AutoSize = true;
+            this.lifeTimeLabel.Location = new System.Drawing.Point(123, 155);
+            this.lifeTimeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lifeTimeLabel.Name = "lifeTimeLabel";
+            this.lifeTimeLabel.Size = new System.Drawing.Size(0, 13);
+            this.lifeTimeLabel.TabIndex = 3;
+            this.lifeTimeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // calculateLifeDate
+            // 
+            this.calculateLifeDate.Location = new System.Drawing.Point(49, 93);
+            this.calculateLifeDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.calculateLifeDate.Name = "calculateLifeDate";
+            this.calculateLifeDate.Size = new System.Drawing.Size(199, 29);
+            this.calculateLifeDate.TabIndex = 2;
+            this.calculateLifeDate.Text = "рассчитать разницу дат";
+            this.calculateLifeDate.UseVisualStyleBackColor = true;
+            this.calculateLifeDate.Click += new System.EventHandler(this.calculateLifeDate_Click);
+            // 
             // dateTimeEndLife
             // 
-            this.dateTimeEndLife.Location = new System.Drawing.Point(65, 73);
-            this.dateTimeEndLife.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeEndLife.Location = new System.Drawing.Point(49, 59);
             this.dateTimeEndLife.Name = "dateTimeEndLife";
-            this.dateTimeEndLife.Size = new System.Drawing.Size(265, 22);
+            this.dateTimeEndLife.Size = new System.Drawing.Size(200, 20);
             this.dateTimeEndLife.TabIndex = 1;
             // 
             // dateTimeStartLife
             // 
-            this.dateTimeStartLife.Location = new System.Drawing.Point(65, 26);
-            this.dateTimeStartLife.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimeStartLife.Location = new System.Drawing.Point(49, 21);
             this.dateTimeStartLife.Name = "dateTimeStartLife";
-            this.dateTimeStartLife.Size = new System.Drawing.Size(265, 22);
+            this.dateTimeStartLife.Size = new System.Drawing.Size(200, 20);
             this.dateTimeStartLife.TabIndex = 0;
             // 
             // statusStrip1
@@ -603,23 +610,22 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.currentTime,
             this.tsslCurrentFile});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 361);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 292);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(460, 25);
+            this.statusStrip1.Size = new System.Drawing.Size(345, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // currentTime
             // 
             this.currentTime.Name = "currentTime";
-            this.currentTime.Size = new System.Drawing.Size(44, 20);
+            this.currentTime.Size = new System.Drawing.Size(34, 17);
             this.currentTime.Text = "00:00";
             // 
             // tsslCurrentFile
             // 
             this.tsslCurrentFile.Name = "tsslCurrentFile";
-            this.tsslCurrentFile.Size = new System.Drawing.Size(0, 20);
+            this.tsslCurrentFile.Size = new System.Drawing.Size(0, 17);
             // 
             // timer1
             // 
@@ -627,35 +633,15 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // calculateLifeDate
-            // 
-            this.calculateLifeDate.Location = new System.Drawing.Point(65, 115);
-            this.calculateLifeDate.Name = "calculateLifeDate";
-            this.calculateLifeDate.Size = new System.Drawing.Size(265, 36);
-            this.calculateLifeDate.TabIndex = 2;
-            this.calculateLifeDate.Text = "рассчитать разницу дат";
-            this.calculateLifeDate.UseVisualStyleBackColor = true;
-            this.calculateLifeDate.Click += new System.EventHandler(this.calculateLifeDate_Click);
-            // 
-            // lifeTimeLabel
-            // 
-            this.lifeTimeLabel.AutoSize = true;
-            this.lifeTimeLabel.Location = new System.Drawing.Point(164, 191);
-            this.lifeTimeLabel.Name = "lifeTimeLabel";
-            this.lifeTimeLabel.Size = new System.Drawing.Size(0, 17);
-            this.lifeTimeLabel.TabIndex = 3;
-            this.lifeTimeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(460, 386);
+            this.ClientSize = new System.Drawing.Size(345, 314);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Швейцарский нож";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -735,7 +721,7 @@
         private System.Windows.Forms.TextBox tbZip;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnKurs;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox kursOut;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DateTimePicker dateTimeEndLife;
         private System.Windows.Forms.DateTimePicker dateTimeStartLife;
